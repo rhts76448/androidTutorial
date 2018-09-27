@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
+    android:orientation="vertical"
     android:gravity="center_horizontal"
     tools:context=".MainActivity">
 
@@ -22,42 +23,47 @@
         android:layout_width="230dp"
         android:layout_height="48dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="14dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:lineSpacingExtra="6sp"
         android:textColor="@color/blueberry"
         android:textStyle="bold"
         android:textSize="18sp"
-        tools:text="Welcome to Cloop.
-Lets build videos together!"
+        android:text="@string/welcome_text"
         />
+    <android.support.v7.widget.FitWindowsLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
 
         <EditText
             android:id="@+id/countryCode"
             android:layout_width="56dp"
             android:layout_height="35dp"
-            android:layout_marginTop="30dp"
             android:layout_alignStart="@+id/welcomeText"
             android:background="@drawable/shape"
             android:layout_below="@+id/welcomeText"
             android:gravity="center"
             android:inputType="phone"
             android:shadowColor="@color/sun_yellow"
-            tools:text="+91" />
+            android:text="@string/ind" />
 
         <EditText
             android:id="@+id/phoneNo"
             android:layout_width="162dp"
             android:layout_height="35dp"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="30dp"
             android:layout_below="@id/welcomeText"
             android:layout_toEndOf="@id/countryCode"
-            tools:hint="Your Phone Number"
+            tools:hint="@string/phone_number"
             android:inputType="phone"
             android:background="@drawable/shape"
             />
+
+
+    </android.support.v7.widget.FitWindowsLinearLayout>
+
 
     <Button
         android:id="@+id/button"
@@ -65,13 +71,13 @@ Lets build videos together!"
         android:layout_height="36dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
         android:layout_below="@+id/number"
-        android:layout_marginTop="284dp"
         android:textColor="@color/black_three"
         android:background="@color/sun_yellow"
         android:textStyle="bold"
-        tools:text="CONTINUE" />
-    
+        android:text="@string/cont" />
+
     <TextView
         android:layout_width="336dp"
         android:layout_height="54dp"
@@ -79,16 +85,13 @@ Lets build videos together!"
         android:layout_marginTop="19dp"
         android:layout_centerHorizontal="true"
         android:gravity="center"
-        tools:text="Your number is safe with us.
-We use it to roll out your rewards &amp; information about
-Cloop events. "
+        android:text="@string/userSatis"
         android:textColor="@color/warm_grey"/>
 
     <TextView
         android:layout_width="336dp"
         android:layout_height="47dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="12dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="sans-serif"
         android:layout_centerHorizontal="true"
         android:gravity="center"
@@ -97,7 +100,7 @@ Cloop events. "
         android:textColor="@color/warm_grey"
         android:textSize="12sp"
         android:textStyle="normal"
-        tools:text="If you continue, you agree to our terms &amp; conditions and privacy policy."
+        android:text="@string/t_and_c"
         />
 
-</android.widget.RelativeLayout>
+</android.widget.LinearLayout>
