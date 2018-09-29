@@ -1,13 +1,10 @@
 <resources>
     <string name="app_name">Cloop</string>
     <string name="cont">CONTINUE</string>
-    <string name="welcome_text">Welcome to Cloop.
-        Lets build videos together!</string>
-    <string name="t_and_c">If you continue, you agree to our terms &amp; conditions and privacy policy.</string>
+    <string name="welcome_text">Welcome to Cloop.\nLets build videos together!</string>
+    <string name="t_and_c">If you continue, you agree to our terms &amp; conditions and\nprivacy policy.</string>
     <string name="ind">+91</string>
-    <string name="phone_number">Your Phone Number</string>
-    <string name="userSatis">Your number is safe with us.
-We use it to roll out your rewards &amp; information about
-Cloop events. </string>
+    <string name="phone_number">Your mobile number</string>
+    <string name="userSatis">Your number is safe with us.\nWe use it to roll out your rewards &amp; information about\nCloop events. </string>
 
 </resources>
