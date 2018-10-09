@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dialog_header">
+        <item>How does Cloop work?</item>
+        <item>Get Featured</item>
+        <item>Invite friends</item>
+    </string-array>
+    <string-array name="dialog_msg">
+        <item>Cloop brings together people to post \nin easy social contests.</item>
+        <item>Post your best. Set the bar high. Show off your skills.</item>
+        <item>Increase your chances of winning \nby getting your gang to post too!</item>
+    </string-array>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog"
+    android:orientation="vertical"
+    android:layout_width="264dp"
+    android:layout_height="305dp"
+    android:background="@drawable/corner"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/dialog_image"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="23dp"
+        />
+    <TextView
+        android:id="@+id/dialog_header"
+        android:layout_width="192dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-bold"
+        android:textColor="@color/black_87"/>
+    <TextView
+        android:id="@+id/dialog_msg"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black_87"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
